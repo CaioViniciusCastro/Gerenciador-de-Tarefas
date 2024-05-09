@@ -1,0 +1,23 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Threading.Tasks;
+using NUnit.Framework;
+
+namespace Status
+{
+    [TestClass]
+    public class UnitTest
+    {
+        [TestMethod]
+        public void addTarefas_Quandoa_Tarefae_Adicionada_Deve_ConterLista()
+        {
+            
+            GerenciadorTarefas Tarefas = new GerenciadorTarefas(); // Arranjo
+
+            
+            Tarefas.AddTask("Implementando a funcionalidade de login", TaskStatus.EmAberto); // Agindo
+
+            
+            Assert.AreEqual(1, Tarefas.Tasks.Count); // Afirmar
+        }
+    }
+}
