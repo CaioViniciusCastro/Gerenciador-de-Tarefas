@@ -1,1 +1,76 @@
+using System;
+using System.Collections.Generic;
+
+public class Tarefa
+{
+    public string Descricao { get; }
+    public string Prioridade { get; }
+
+    public Tarefa(string descricao, string prioridade = "baixo")
+    {
+        Descricao = descricao;
+        Prioridade = prioridade;
+    }
+}
+
+public class ListaDeTarefas
+{
+    private List<Tarefa> tarefas;
+
+    public ListaDeTarefas()
+    {
+        tarefas = new List<Tarefa>();
+    }
+
+    public void AdicionarTarefa(string descricao, string prioridade = "baixo")
+    {
+        Tarefa novaTarefa = new Tarefa(descricao, prioridade);
+        tarefas.Add(novaTarefa);
+    }
+
+    public void MostrarTarefas()
+    {
+        for (int i = 0; i < tarefas.Count; i++)
+        {
+            Console.WriteLine($"{i + 1}. {tarefas[i].Descricao} - Prioridade: {tarefas[i].Prioridade}");
+        }
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ListaDeTarefas listaTarefas = new ListaDeTarefas();
+
+        while (true)
+        {
+            Console.WriteLine("\n Lista de Tarefas");
+            listaTarefas.MostrarTarefas();
+
+            Console.WriteLine("01. add uma nova tarefa");
+            Console.WriteLine("02. exit");
+
+            string escolha = Console.ReadLine();
+
+            if (escolha == "01")
+            {
+                Console.Write("insira a descrição da tarefa: ");
+                string descricao = Console.ReadLine();
+                Console.Write("insira a prioridade da tarefa (alto/medio/baixo): ");
+                string prioridade = Console.ReadLine();
+                listaTarefas.AdicionarTarefa(descricao, prioridade);
+            }
+            else if (escolha == "02")
+            {
+                Console.WriteLine("Saindo...");
+                break;
+            }
+            else
+            {
+                Console.WriteLine("Opção incorreta. tente novamente.");
+            }
+        }
+    }
+}
 
