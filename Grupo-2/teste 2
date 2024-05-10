@@ -1,0 +1,51 @@
+using NUnit.Framework;
+using System;
+
+namespace TarefaTest
+{
+    [TestFixture]
+    public class ListaDeTarefasTests
+    {
+        [Test]
+        public void AdicionarTarefa_CriarNovaTarefa_TarefaAdicionada()
+        {
+            // Arrange
+            ListaDeTarefas listaTarefas = new ListaDeTarefas();
+
+            // Act
+            listaTarefas.AdicionarTarefa("Fazer compras");
+
+            // Assert
+            Assert.AreEqual(1, listaTarefas.ContarTarefas());
+        }
+
+        [Test]
+        public void MostrarTarefas_ListaVazia_NenhumaTarefaMostrada()
+        {
+            // Arrange
+            ListaDeTarefas listaTarefas = new ListaDeTarefas();
+            var consoleOutput = new System.IO.StringWriter();
+            Console.SetOut(consoleOutput);
+
+            // Act
+            listaTarefas.MostrarTarefas();
+
+            // Assert
+            StringAssert.Contains("Lista vazia", consoleOutput.ToString());
+        }
+
+        [Test]
+        public void MostrarTarefas_TarefasAdicionadas_TarefasMostradasCorretamente()
+        {
+            // Arrange
+            ListaDeTarefas listaTarefas = new ListaDeTarefas();
+            listaTarefas.AdicionarTarefa("Fazer compras", "alto");
+            listaTarefas.AdicionarTarefa("Estudar para o exame", "baixo");
+            var consoleOutput = new System.IO.StringWriter();
+            Console.SetOut(consoleOutput);
+
+            // Act
+            listaTarefas.MostrarTarefas();
+
+            // Assert
+            StringAssert.Contains("1. Fazer compras - Prio
