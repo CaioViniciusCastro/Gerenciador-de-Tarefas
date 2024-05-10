@@ -1,23 +1,18 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Threading.Tasks;
 using NUnit.Framework;
 
 namespace Status
 {
-    [TestClass]
-    public class UnitTest
+    [TestFixture]
+    public class TesteStatusTarefa
     {
-        [TestMethod]
-        public void addTarefas_Quandoa_Tarefae_Adicionada_Deve_ConterLista()
+        [Test]
+        public void AdicionarTarefa_QuandoTarefaAdicionada_DeveConterNaLista()
         {
-            
-            GerenciadorTarefas Tarefas = new GerenciadorTarefas(); // Arranjo
+            GerenciadorTarefas gerenciadorTarefas = new GerenciadorTarefas();
 
-            
-            Tarefas.AddTask("Implementando a funcionalidade de login", TaskStatus.EmAberto); // Agindo
+            gerenciadorTarefas.AdicionarTarefa("Implementando a funcionalidade de login", StatusTarefa.EmAberto);
 
-            
-            Assert.AreEqual(1, Tarefas.Tasks.Count); // Afirmar
+            Assert.AreEqual(1, gerenciadorTarefas.ObterTarefas().Count);
         }
     }
 }
