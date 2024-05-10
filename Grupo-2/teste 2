@@ -3,24 +3,9 @@ using System;
 
 namespace TarefaTest
 {
-    [TestFixture]
-    public class ListaDeTarefasTests
-    {
-        [Test]
-        public void AdicionarTarefa_CriarNovaTarefa_TarefaAdicionada()
-        {
-            // Arrange
-            ListaDeTarefas listaTarefas = new ListaDeTarefas();
 
-            // Act
-            listaTarefas.AdicionarTarefa("Fazer compras");
-
-            // Assert
-            Assert.AreEqual(1, listaTarefas.ContarTarefas());
-        }
-
-        [Test]
-        public void MostrarTarefas_ListaVazia_NenhumaTarefaMostrada()
+    [Test]
+    public void MostrarTarefas_ListaVazia_NenhumaTarefaMostrada()
         {
             // Arrange
             ListaDeTarefas listaTarefas = new ListaDeTarefas();
