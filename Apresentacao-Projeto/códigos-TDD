@@ -1,1 +1,20 @@
 //grupo 2
+
+using NUnit.Framework;
+
+namespace Status
+{
+    [TestFixture]
+    public class TesteStatusTarefa
+    {
+        [Test]
+        public void AdicionarTarefa_QuandoTarefaAdicionada_DeveConterNaLista()
+        {
+            GerenciadorTarefas gerenciadorTarefas = new GerenciadorTarefas();
+
+            gerenciadorTarefas.AdicionarTarefa("Implementando a funcionalidade de login", StatusTarefa.EmAberto);
+
+            Assert.AreEqual(1, gerenciadorTarefas.ObterTarefas().Count);
+        }
+    }
+}
