@@ -1,0 +1,27 @@
+SELECT * FROM demo;
+
+CREATE TABLE Usuario{
+	ID_usuário int PRIMARY KEY,
+	Nome_usuario varchar(100) NOT NULL,
+    Idade_usuario int NOT NULL
+};
+
+CREATE TABLE Tarefas{
+	ID_Tarefas int PRIMARY KEY,
+    Funcionalidade_tarefa varchar(100) NOT NULL,	--"Funcionalidade" = Criar, deletar e editar tarefas
+	ID_usuario int FOREIGN KEY,
+    ID_status int FOREIGN KEY,
+    ID_prioridade int FOREIGN KEY
+};
+
+CREATE TABLE Status{
+	ID_status int PRIMARY KEY,
+    Status_tarefa varchar(100) NOT NULL,		--"Status_tarefa" está relacionada ao status atual de x tarefa, seja ela em andamento, realizada ou aberta.
+    ID_usuario int FOREIGN KEy
+};
+
+CREATE TABLE Prioridade{
+	ID_prioridade int PRIMARY KEY,
+    Tipo_prioridade varchar(100),		--""Tipo_prioridade" está relacionado com a alta, média e baixa intensidade.
+    ID_usuario int FOREIGN KEY 
+};
