@@ -1,0 +1,14 @@
+c:\Users\pedro\OneDrive\Documentos\Programinha\C#\Projetos C#\Gerenciador de tarefas Grau\Gerenciador Grau\bin\Debug\net8.0\Gerenciador Grau.exe
+c:\Users\pedro\OneDrive\Documentos\Programinha\C#\Projetos C#\Gerenciador de tarefas Grau\Gerenciador Grau\bin\Debug\net8.0\Gerenciador Grau.deps.json
+c:\Users\pedro\OneDrive\Documentos\Programinha\C#\Projetos C#\Gerenciador de tarefas Grau\Gerenciador Grau\bin\Debug\net8.0\Gerenciador Grau.runtimeconfig.json
+c:\Users\pedro\OneDrive\Documentos\Programinha\C#\Projetos C#\Gerenciador de tarefas Grau\Gerenciador Grau\bin\Debug\net8.0\Gerenciador Grau.dll
+c:\Users\pedro\OneDrive\Documentos\Programinha\C#\Projetos C#\Gerenciador de tarefas Grau\Gerenciador Grau\bin\Debug\net8.0\Gerenciador Grau.pdb
+c:\Users\pedro\OneDrive\Documentos\Programinha\C#\Projetos C#\Gerenciador de tarefas Grau\Gerenciador Grau\obj\Debug\net8.0\Gerenciador Grau.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\pedro\OneDrive\Documentos\Programinha\C#\Projetos C#\Gerenciador de tarefas Grau\Gerenciador Grau\obj\Debug\net8.0\Gerenciador Grau.AssemblyInfoInputs.cache
+c:\Users\pedro\OneDrive\Documentos\Programinha\C#\Projetos C#\Gerenciador de tarefas Grau\Gerenciador Grau\obj\Debug\net8.0\Gerenciador Grau.AssemblyInfo.cs
+c:\Users\pedro\OneDrive\Documentos\Programinha\C#\Projetos C#\Gerenciador de tarefas Grau\Gerenciador Grau\obj\Debug\net8.0\Gerenciador Grau.csproj.CoreCompileInputs.cache
+c:\Users\pedro\OneDrive\Documentos\Programinha\C#\Projetos C#\Gerenciador de tarefas Grau\Gerenciador Grau\obj\Debug\net8.0\Gerenciador Grau.dll
+c:\Users\pedro\OneDrive\Documentos\Programinha\C#\Projetos C#\Gerenciador de tarefas Grau\Gerenciador Grau\obj\Debug\net8.0\refint\Gerenciador Grau.dll
+c:\Users\pedro\OneDrive\Documentos\Programinha\C#\Projetos C#\Gerenciador de tarefas Grau\Gerenciador Grau\obj\Debug\net8.0\Gerenciador Grau.pdb
+c:\Users\pedro\OneDrive\Documentos\Programinha\C#\Projetos C#\Gerenciador de tarefas Grau\Gerenciador Grau\obj\Debug\net8.0\Gerenciador Grau.genruntimeconfig.cache
+c:\Users\pedro\OneDrive\Documentos\Programinha\C#\Projetos C#\Gerenciador de tarefas Grau\Gerenciador Grau\obj\Debug\net8.0\ref\Gerenciador Grau.dll

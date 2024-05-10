@@ -1,0 +1,1 @@
+Extensão que permite o salvamento, inserção e remoção de tarefas em arquivo local da máquina executada.
